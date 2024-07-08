@@ -4,9 +4,11 @@ import 'package:login_project/counter.dart';
 import 'package:login_project/list_view.dart';
 import 'package:login_project/multiple_selection.dart';
 import 'package:login_project/notification.dart';
+import 'package:login_project/onboarding_view.dart';
 import 'package:login_project/reusable_widget.dart';
 import 'package:login_project/search.dart';
 import 'package:login_project/selection.dart';
+import 'package:login_project/splash_screen.dart';
 
 import 'login.dart';
 
@@ -19,12 +21,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: 'Poppins'
-      ),
-      home: SearchView(),
+      theme: ThemeData(fontFamily: 'Poppins'),
+      home: OnBoardingView(),
     );
   }
 }
