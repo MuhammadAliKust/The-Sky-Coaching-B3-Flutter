@@ -8,6 +8,15 @@ class OnBoardingView extends StatelessWidget {
 
   PageController controller = PageController();
 
+  List<String> imageList = [
+    "assets/images/",
+    "assets/images/",
+    "assets/images/",
+    "assets/images/",
+    "assets/images/",
+    "assets/images/",
+  ];
+
   List<OnBoardingModel> onBoardingList = [
     OnBoardingModel(image: 'assets/images/ob1.png', title: 'Trending News'),
     OnBoardingModel(
@@ -30,25 +39,16 @@ class OnBoardingView extends StatelessWidget {
                   controller: controller,
                   itemCount: onBoardingList.length,
                   itemBuilder: (context, i) {
-                    return Column(
-                      children: [
-                        Image.asset(onBoardingList[i].image.toString()),
-                        Text(
-                          onBoardingList[i].title.toString(),
-                          style: TextStyle(fontSize: 30),
-                        )
-                      ],
-                    );
+                    return Image.asset(onBoardingList[i].image.toString());
                   }),
             ),
             SmoothPageIndicator(
                 controller: controller, // PageController
                 count: onBoardingList.length,
                 effect: const ExpandingDotsEffect(
-                  dotWidth: 6,
-                  dotHeight: 6,
-                  spacing: 6
-                ), // your preferred effect
+                    dotWidth: 6,
+                    dotHeight: 6,
+                    spacing: 6), // your preferred effect
                 onDotClicked: (index) {}),
             SizedBox(
               height: 30,

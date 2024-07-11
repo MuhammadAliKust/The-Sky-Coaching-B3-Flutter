@@ -3,5 +3,4 @@ class OnBoardingModel{
   final String image;
 
   OnBoardingModel({required this.title, required this.image});
-
 }
