@@ -33,6 +33,10 @@ class _StackWidgetDemoState extends State<StackWidgetDemo> {
           selectedIndex = val;
           setState(() {});
         },
+        selectedLabelStyle: TextStyle(
+          fontSize: 20
+        ),
+        unselectedFontSize: 18,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
           BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Add'),
