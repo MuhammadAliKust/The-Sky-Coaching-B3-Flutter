@@ -24,17 +24,14 @@ class _DropDownViewState extends State<DropDownView> {
         children: [
           Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.blue.withOpacity(0.6)
-            ),
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.blue.withOpacity(0.6)),
             child: DropdownButton(
-
                 items: itemsList.map((e) {
                   return DropdownMenuItem(
                     value: e,
                     child: Text(e.toString()),
                   );
-
                 }).toList(),
                 icon: Icon(Icons.add),
                 underline: SizedBox(),
