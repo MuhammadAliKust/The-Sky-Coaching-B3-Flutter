@@ -9,6 +9,7 @@ import 'package:login_project/onboarding_view.dart';
 import 'package:login_project/reusable_widget.dart';
 import 'package:login_project/search.dart';
 import 'package:login_project/selection.dart';
+import 'package:login_project/slideable.dart';
 import 'package:login_project/splash_screen.dart';
 import 'package:login_project/stack_view.dart';
 import 'package:login_project/switch_view.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Poppins'),
-      home: SwitchView(),
+      home: SlideAbleView(),
     );
   }
 }
